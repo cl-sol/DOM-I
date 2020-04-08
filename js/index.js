@@ -106,3 +106,17 @@ contactInfo[2].textContent = siteContent["contact"]["email"];
 //footer
 const footer = document.querySelector("footer p");
 footer.textContent = siteContent["footer"]["copyright"];
+
+//changes
+const hello = document.createElement("a");
+hello.textContent = "Hello!";
+
+const boo = document.createElement("a");
+boo.textContent = "Boo!";
+
+const updatedNav = document.querySelector("nav");
+updatedNav.prepend(hello);
+updatedNav.appendChild(boo);
+
+const greenNav = document.querySelectorAll("nav a");
+greenNav.forEach(green => green.style.color = "green");
