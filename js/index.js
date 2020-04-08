@@ -49,9 +49,55 @@ navigation[3].textContent = siteContent["nav"]["nav-item-4"];
 navigation[4].textContent = siteContent["nav"]["nav-item-5"];
 navigation[5].textContent = siteContent["nav"]["nav-item-6"];
 
-const headerText = document.querySelector(".cta-text");
+const headerText = document.querySelector(".cta-text h1");
 headerText.textContent = siteContent["cta"]["h1"];
 
-const headerImg = document.querySelector("cta-img");
+const headerButton = document.querySelector(".cta-text button");
+headerButton.textContent = siteContent["cta"]["button"];
+
+const headerImg = document.getElementById("cta-img");
 headerImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+// const mTitle1 = document.querySelectorAll(".text-content");
+// mTitle1.children[0].textContent = siteContent["main-content"]["features-h4"];
+
+// // const mText1 = document.querySelectorAll(".text-content");
+// // mText1[]
+
+
+
+const mTitle1 = document.querySelectorAll(".top-content .text-content h4");
+mTitle1[0].textContent = siteContent["main-content"]["features-h4"];
+
+const mText1 = document.querySelectorAll(".top-content .text-content p");
+mText1[0].textContent = siteContent["main-content"]["features-content"];
+
+const mTitle2 = document.querySelectorAll(".top-content .text-content h4");
+mTitle2[1].textContent = siteContent["main-content"]["about-h4"];
+
+const mText2 = document.querySelectorAll(".top-content .text-content p");
+mText2[1].textContent = siteContent["main-content"]["about-content"];
+
+const mImage = document.querySelector(".middle-img");
+mImage.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+const mTitle3 = document.querySelectorAll(".bottom-content .text-content h4");
+mTitle3[0].textContent = siteContent["main-content"]["services-h4"];
+
+const mText3 = document.querySelectorAll(".bottom-content .text-content p");
+mText3[0].textContent = siteContent["main-content"]["services-content"];
+
+const mTitle4 = document.querySelectorAll(".bottom-content .text-content h4");
+mTitle4[1].textContent = siteContent["main-content"]["product-h4"];
+
+const mText4 = document.querySelectorAll(".bottom-content .text-content p");
+mText4[1].textContent = siteContent["main-content"]["product-content"];
+
+const mTitle5 = document.querySelectorAll(".bottom-content .text-content h4");
+mTitle5[2].textContent = siteContent["main-content"]["vision-h4"]
+
+const mText5 = document.querySelectorAll(".bottom-content .text-content p");
+mtext5[2].textContent = siteContent["main-content"]["vision-content"];
+
+
 
