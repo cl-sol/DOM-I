@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//nav
 const navigation = document.querySelectorAll("nav a");
 navigation[0].textContent = siteContent["nav"]["nav-item-1"];
 navigation[1].textContent = siteContent["nav"]["nav-item-2"];
@@ -49,6 +50,7 @@ navigation[3].textContent = siteContent["nav"]["nav-item-4"];
 navigation[4].textContent = siteContent["nav"]["nav-item-5"];
 navigation[5].textContent = siteContent["nav"]["nav-item-6"];
 
+//header
 const headerText = document.querySelector(".cta-text h1");
 headerText.textContent = siteContent["cta"]["h1"];
 
@@ -58,14 +60,7 @@ headerButton.textContent = siteContent["cta"]["button"];
 const headerImg = document.getElementById("cta-img");
 headerImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
-// const mTitle1 = document.querySelectorAll(".text-content");
-// mTitle1.children[0].textContent = siteContent["main-content"]["features-h4"];
-
-// // const mText1 = document.querySelectorAll(".text-content");
-// // mText1[]
-
-
-
+//main content
 const mTitle1 = document.querySelectorAll(".top-content .text-content h4");
 mTitle1[0].textContent = siteContent["main-content"]["features-h4"];
 
@@ -94,10 +89,16 @@ const mText4 = document.querySelectorAll(".bottom-content .text-content p");
 mText4[1].textContent = siteContent["main-content"]["product-content"];
 
 const mTitle5 = document.querySelectorAll(".bottom-content .text-content h4");
-mTitle5[2].textContent = siteContent["main-content"]["vision-h4"]
+mTitle5[2].textContent = siteContent["main-content"]["vision-h4"];
 
 const mText5 = document.querySelectorAll(".bottom-content .text-content p");
-mtext5[2].textContent = siteContent["main-content"]["vision-content"];
+mText5[2].textContent = siteContent["main-content"]["vision-content"];
 
+//Contact
+const contactTitle = document.querySelector(".contact h4");
+contactTitle.textContent = siteContent["contact"]["contact-h4"];
 
-
+const contactInfo = document.querySelectorAll(".contact p");
+contactInfo[0].textContent = siteContent["contact"]["address"];
+contactInfo[1].textContent = siteContent["contact"]["phone"];
+contactInfo[2].textContent = siteContent["contact"]["email"];
